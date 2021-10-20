@@ -1,2 +1,3 @@
 # my-pwp-esten
-Personal Website Project
+**My Website will be a portfolio targeted towards Potential Employers and Clients.**
+
