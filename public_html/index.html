@@ -8,12 +8,12 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-secondary">
 <!-- NavBar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
     <div class="container-fluid">
         <span class="navbar-brand">
-            <img src="images/Splash.png" alt="PlaceHolderForNow" height="40">
+            <img src="images/splash.png" alt="PlaceHolderForNow" height="40">
         </span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,45 +22,58 @@
         <div class="collapse navbar-collapse align-items-end" id="navbarNavDropdown">
             <ul class="navbar-nav p-2 ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#About Me">About Me</a>
+                    <a class="nav-link active" href="#aboutMe">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#Experience">Experience</a>
+                    <a class="nav-link active" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#MyWorks">My Works/Sites</a>
+                    <a class="nav-link active" href="#myWorks">My Works/Sites</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#Form">Contact Form</a>
+                    <a class="nav-link active" href="#form">Contact Form</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 <!-- About Me Section -->
-<Section class="bg-danger" id="About Me">
-    <form class="d-flex">
-        <div class="container-fluid">
-            <div class="container">
-                <img src="images/Splash.png" alt="PlaceHolder" class="justify-content-center align-items-center" >
+<Section class="bg-danger" id="aboutMe">
+    <div class="container-fluid">
+        <!-- Image -->
+        <div class="row">
+            <div class="col d-flex justify-content-center my-5">
+                <img src="images/splash.png" alt="PlaceHolder" class="justify-content-center align-items-center">
             </div>
         </div>
+        <!-- Text Area -->
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div class="card" id="aboutMeText">
+                    <div class="card-body p-4">
+                        <p class="card-text text-light"> This is a major test for my text section to see if it folds right if it does not welp we got issues</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     </form>
 </Section>
 <!-- Experience Section -->
-<Section class="bg-secondary" id="Experience">
+<Section class="bg-secondary" id="experience">
     <div class="container-fluid">
 
     </div>
 </Section>
 <!-- My Work section -->
-<section class="bg-primary" id="MyWorks">
+<section class="bg-primary" id="myWorks">
     <div class="container-fluid">
 
     </div>
 </section>
 <!-- Contact Form -->
-<section class="bg-warning" id="Form">
+<section class="bg-warning" id="form">
     <div class="container-fluid">
 
     </div>

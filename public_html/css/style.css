@@ -1,0 +1,28 @@
+#aboutMe {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+#aboutMeText {
+    background-color: transparent;
+    width: 30rem;
+}
+@media (min-width: 502px) {
+
+    #aboutMeText p {
+        font-size: large;
+    }
+}
+@media (max-width: 502px) {
+    #aboutMeText p {
+        font-size: medium;
+    }
+}
+@media (max-width: 402px) {
+
+    #aboutMeText p {
+        font-size: smaller;
+    }
+}
