@@ -9,6 +9,15 @@
     background-color: transparent;
     width: 30rem;
 }
+#myWorks {
+    background-color: #5d646d;
+}
+#footerNav {
+    background-color: #5d646d;
+}
+#footerNav a {
+    color: white;
+}
 @media (min-width: 502px) {
 
     #aboutMeText p {
