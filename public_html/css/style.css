@@ -5,8 +5,11 @@
     height: 700px;
     width: 100%;
 }
-#aboutMeText {
-    background-color: transparent;
+#aboutMeTextTop{
+    font-size: x-large;
+}
+
+#aboutMeTextBottom {
     width: 30rem;
 }
 #myWorks {
@@ -20,18 +23,31 @@
 }
 @media (min-width: 502px) {
 
-    #aboutMeText p {
+    #aboutMeTextBottom p {
         font-size: large;
     }
 }
 @media (max-width: 502px) {
-    #aboutMeText p {
+    #aboutMeTextBottom p {
         font-size: medium;
     }
 }
 @media (max-width: 402px) {
 
-    #aboutMeText p {
-        font-size: smaller;
+    #aboutMeTextBottom p {
+        font-size: small;
     }
+}
+@media (max-width: 840px) {
+    #aboutMeTextTop p {
+        font-size: x-large;
+    }
+}
+@media (max-width: 600px) {
+    #aboutMeTextTop p {
+        font-size: large;
+    }
+}
+@media (max-width: 502px) {
+
 }
