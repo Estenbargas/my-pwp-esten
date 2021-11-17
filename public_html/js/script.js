@@ -33,7 +33,7 @@ $(document).ready(function () {
         },
         submitHandler: (form) => {
             $("#contact").ajaxSubmit({
-                type: post,
+                type: "post",
                 url: $("#contact").attr('action'),
                 success: (ajaxOutput) => {
                     $("output-area").css("display","")
