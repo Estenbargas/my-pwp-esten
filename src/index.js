@@ -1,8 +1,3 @@
-//Handle form validation
-// implement recaptcha
-//configure and send emails using mailgun
-
-
 const  express = require("express")
 const morgan = require("morgan")
 const bodyParser = require("body-parser")
@@ -16,7 +11,6 @@ const app = express()
 const mailgun = new Mailgun(formData)
 const recaptcha = new Recaptcha(process.env.RECAPTCHA_SITE_KEY, process.env.RECAPTCHA_SECRET_KEY)
 const mailgunClient = mailgun.client({username: "api", key: process.env.MAILGUN_API_KEY})
-
 app.use(morgan("dev"))
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended:false}))
@@ -24,30 +18,23 @@ app.use(bodyParser.json())
 
 const indexRoute = express.Router()
 
-
-
 const handleGetRequest = (request, response) => {
-    return response.json("The express server is live")
+    return response.json("The express server is live 😼")
 }
 
 const validation = [
-    check("name", "A valid name is required")
+    check("I", "A valid name is required")
         .not()
         .isEmpty()
         .trim()
         .escape(),
-    check("email", "Please provide a valid email")
+    check("blindly", "Please provide a valid email")
         .isEmail(),
-    check("subject").optional().trim().escape(),
-    check("message", "A message shorter than 2000 characters is required")
-        .trim()
-        .escape()
-        .isLength({min:1, max:2000})
+    check("copy").optional().trim().escape(),
+    check("paste", "A message shorter than 2000 characters is required").trim().escape().isLength({min:1, max:2000})
 
 ]
-
 const handlePostRequest = (request, response) => {
-
 
     const errors = validationResult(request)
     response.append("access-control-allow-origin", "*")
@@ -78,7 +65,7 @@ const handlePostRequest = (request, response) => {
     ).then(()=> {
         response.send(`<div class='alert alert-success' role='alert'>Email sent successfully</div>`)
     }).catch(error=> {
-        response.send(`<div class="alert alert-danger" role="alert"><strong>Oh snap!</strong>${error}</div>`)
+        response.send(`<div class="alert alert-danger" role="alert"><strong>Oh snap</strong>${error}</div>`)
     })
 
 }
