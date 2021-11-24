@@ -5,6 +5,10 @@
     height: 700px;
     width: 100%;
 }
+#aboutMe img {
+    width: 300px;
+    height: 300px;
+}
 #aboutMeTextTop{
     font-size: x-large;
 }
@@ -21,6 +25,12 @@
 #footerNav a {
     color: white;
 }
+#myWorks img {
+    width: 300px;
+    height: 300px;
+}
+
+
 @media (min-width: 502px) {
 
     #aboutMeTextBottom p {
