@@ -23,15 +23,15 @@ const handleGetRequest = (request, response) => {
 }
 
 const validation = [
-    check("I", "A valid name is required")
+    check("name", "A valid name is required")
         .not()
         .isEmpty()
         .trim()
         .escape(),
-    check("blindly", "Please provide a valid email")
+    check("email", "Please provide a valid email")
         .isEmail(),
-    check("copy").optional().trim().escape(),
-    check("paste", "A message shorter than 2000 characters is required").trim().escape().isLength({min:1, max:2000})
+    check("subject").optional().trim().escape(),
+    check("message", "A message shorter than 2000 characters is required").trim().escape().isLength({min:1, max:2000})
 
 ]
 const handlePostRequest = (request, response) => {
